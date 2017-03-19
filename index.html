@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片拖动</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style type="text/css">
+    #content {
+        position: relative;
+        width: 300px;
+        height: 188px;
+        top: 100px;
+        left: 100px;
+        background: orange;
+        cursor: move;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <img src="./images/3.jpg">
+    </div>
+    <script type="text/javascript" src="./js/drag.js"></script>
+    <script>
+    window.onload = function() {
+        var content = document.getElementById("content");
+        startDrag(content);
+    }
+    </script>
+</body>
+
+</html>
